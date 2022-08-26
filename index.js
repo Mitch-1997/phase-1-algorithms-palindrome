@@ -1,5 +1,15 @@
+const { stringify} = require("mocha/lib/utils");
+
 function isPalindrome(word) {
   // Write your algorithm here
+  let reversedWord = word.split("").reverse().join("");
+
+  if(word === reversedWord) {
+    return true;
+    
+  } else {
+    return false;
+  }
 }
 
 /* 
